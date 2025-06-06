@@ -46,6 +46,7 @@ SELECT
 FROM online_retail
 GROUP BY CustomerID;
 
+- **Top 10 Products**
 SELECT 
   Description, 
   SUM(Quantity) AS total_quantity_sold
@@ -54,7 +55,7 @@ GROUP BY Description
 ORDER BY total_quantity_sold DESC
 LIMIT 10;
 
-
+- **Revenue by Country**
 SELECT 
   Country, 
   ROUND(SUM(Quantity * UnitPrice), 2) AS Total_sales_revenue
