@@ -45,3 +45,19 @@ SELECT
   END AS Customer_Segmentation
 FROM online_retail
 GROUP BY CustomerID;
+
+SELECT 
+  Description, 
+  SUM(Quantity) AS total_quantity_sold
+FROM online_retail
+GROUP BY Description
+ORDER BY total_quantity_sold DESC
+LIMIT 10;
+
+
+SELECT 
+  Country, 
+  ROUND(SUM(Quantity * UnitPrice), 2) AS Total_sales_revenue
+FROM online_retail
+GROUP BY Country
+ORDER BY Total_sales_revenue DESC;
