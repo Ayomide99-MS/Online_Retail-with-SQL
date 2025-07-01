@@ -2,12 +2,12 @@
 
 This project uses SQL to analyze sales and customer behavior in an online retail dataset. It covers customer segmentation, sales performance, product popularity, revenue trends, and customer value insights.
 
-## 📁 Dataset
+##  Dataset
 - **Source**: Online Retail (commonly found on UCI Machine Learning Repository or Kaggle)
 - **Table Used**: `online_retail`
 - **Key Columns**: InvoiceNo, Description, Quantity, UnitPrice, InvoiceDate, CustomerID, Country
 
-## 📊 Objectives
+##  Objectives
 
 1. **Customer Segmentation**
    - Categorize customers based on purchase frequency (one-time, repeat, high-value).
@@ -31,7 +31,7 @@ This project uses SQL to analyze sales and customer behavior in an online retail
    - Group product descriptions into categories (e.g., BLUE, CREAM, ROSE, etc.).
    - Analyze revenue by category.
 
-## 🧠 Sample SQL Logic
+##  Sample SQL Logic
 
 - **Customer Segmentation**
 ```sql
